@@ -1,27 +1,24 @@
 # SentimentAnalysis
-Approccio risolutivo:
-Sistemi su cui testare il codice:
-1. MacOs ARM64
-2. MacOs AMD64
-3. Windows 11 AMD64
-4. Windows 11 ARM64
-
-Installazione di Python su tutti i dispositivi
-Possibili strade:
-1. MacOs ARM64, MacOs AMD64, Windows 11 AMD64: Installazione immediata di Anaconda
-2. Windows 11 ARM64: (Miniforge, Miniconda, WLS2 -> Distribuzione Linux) ?
-
-Creazione diretta dell'environment python versione 3.8 su MacOs ARM64
-Attivazione dell'environment
-Installazione di librerie consigliate e di:
-1. vaderSentiment: Sentiment Analysis
-2. googletrans: traduzione dall'italiano all'inglese del messaggio (per poi utilizzare vaderSentiment, che di base prevede solo l'inglese) letto dal file di testo message.txt
-
-Definizione dell'environment: pythonEnv.yml
-Creazione del main.py
-Se eseguito su Visual Studio Code: Esecuzione nell'apposito terminale usando come interprete pythonEnv
-Se eseguito da terminale: Assicurarsi di avere pythonEnv attivo
-Virtualizzazione della macchina virtuale Windows 11 con architettura ARM64 (Eseguita su MacOS ARM64)
-Virtualizzazione della macchina virtuale MacOs con architettura AMD64 (Eseguita su Windows 11 AMD64)
-Testare il codice sui 4 dispositivi
-(Al momento difficoltà con macchina virtuale Windows 11 architettura ARM64 -> Chiedere)
+Approccio risolutivo: 
+1) Installazione di Anaconda versione MacOs ARM (su macchina fisica con sistema operativo MacOs ed architettura ARM)
+2) Creazione di un environment python 3.8
+3) Attivazione dell'environment
+4) Installazione del framework vaderSentiment per la Sentiment Analysis di testo in lingua inglese
+5) Installazione del framework googletrans per la traduzione del testo dall'italiano all'inglese
+6) Creazione del documento di testo message.txt il quale conterrà il messaggio di cui desidero fare la Sentiment Analysis
+7) Creazione del main.py
+8) Test del funzionamento del programma sia su terminale, assicurandosi di aver attivato l'environment, che su Visual Studio Code, assicurandosi di aver selezionato come interprete l'environment
+9) Creazione della definizione dell'environment definizione.yml
+10) Caricamento dell'intero progetto su GitHub
+11) Installazione di Anaconda versione Windows 11 AMD64 (su macchina fisica con sistema operativo Windows 11 ed architettura AMD64)
+12) Download del file definizione.yml da GitHub
+13) Creazione manuale di un nuovo environment python 3.8 installando il necessario
+14) Creazione della definizione del nuovo environment
+15) Confronto dei due environment e modifica del definizione.yml con l'obiettivo di definire l'environment su entrambi i sistemi
+16) Attraverso l'aggiornato definizione.yml creazione dell'environment
+17) Download del main.py da GitHub
+18) Creazione di un file di testo message.txt contenente il messaggio di cui desidero fare la Sentiment Analysis
+19) Test del funzionamento del programma sia su terminale che su Visual Studio Code come fatto in precedenza con gli stessi accorgimenti sopra specificati
+20) Creazione di una macchina virtuale virtualizzata Windows 11 ARM (su macchina fisica con sistema operativo MacOs ed architettura ARM)
+21) Creazione di una macchina virtuale emulata Windows 10 AMD64 (su macchina fisica con sistema operativo MacOs ed architettura ARM)
+23) Test del codice spiegato dal punto 11) al punto 19) su entrambi i nuovi sistemi
