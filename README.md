@@ -19,5 +19,3 @@ Approccio risolutivo:
 17) Download del main.py da GitHub
 18) Creazione di un file di testo message.txt contenente il messaggio di cui desidero fare la Sentiment Analysis
 19) Test del funzionamento del programma sia su terminale che su Visual Studio Code come fatto in precedenza con gli stessi accorgimenti sopra specificati
-20) Creazione di una macchina virtuale emulata Windows 11 AMD64 (su macchina fisica con sistema operativo MacOs ed architettura ARM)
-21) Test del codice spiegato dal punto 11) al punto 19) sulla macchina virtuale
